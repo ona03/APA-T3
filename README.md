@@ -50,7 +50,7 @@ Dados dos vectores $v_1$ y $v_2$, es posible descomponer $v_1$ en dos componente
 Inserte a continuación una captura de pantalla que muestre el resultado de ejecutar el fichero `algebra/vectores.py` con la opción *verbosa*, de manera que se muestre el resultado de la ejecución de los tests unitarios.
 
 <div style="text-align:center;">
-<img src="algebra/testU1.png" alt="Test1" width="500" height="550">
+<img src="algebra/testU1.png" alt="Test1" width="500" height="560">
 <img src="algebra/testU2.png" alt="Test2" width="500" height="580">
 <img src="algebra/testU3.png" alt="Test3" width="500" height="550">
 </div>
@@ -60,7 +60,7 @@ Inserte a continuación una captura de pantalla que muestre el resultado de ejec
 Inserte a continuación el código de los métodos desarrollados en esta tarea, usando los comandos necesarios para que se realice el realce sintáctico en Python del mismo (no vale insertar una imagen o una captura de pantalla, debe hacerse en formato *markdown*).
 
 ```py
-def __mul__(self, other):
+  def __mul__(self, other):
         """
         Producto de dos elementos compsatibles
         >>> v1 = Vector([1, 2, 3])

@@ -79,6 +79,8 @@ Inserte a continuación el código de los métodos desarrollados en esta tarea, 
                 raise ValueError("Los vectores deben ser de la misma longitud para el producto de Hadamard.")
             resultado = [self.vector[i] * other.vector[i] for i in range(len(self.vector))]
             return Vector(resultado)
+
+    __rmul__ = __mul__
             
     def __matmul__(self, other):
         """
@@ -92,6 +94,8 @@ Inserte a continuación el código de los métodos desarrollados en esta tarea, 
         if isinstance(other, Vector):
             resultado = sum(self.vector[i] * other.vector[i] for i in range(len(self.vector)))
             return resultado
+
+    __rmul__ = __mul__
 
     def __floordiv__(self, other):
         """

@@ -95,7 +95,7 @@ Inserte a continuación el código de los métodos desarrollados en esta tarea, 
             resultado = sum(self.vector[i] * other.vector[i] for i in range(len(self.vector)))
             return resultado
 
-    __rmul__ = __mul__
+    __rmatmul__ = __rmatmul__
 
     def __floordiv__(self, other):
         """

@@ -127,7 +127,7 @@ Inserte a continuación el código de los métodos desarrollados en esta tarea, 
         if isinstance(other, Vector):
             if len(self.vector) != len(other.vector):
                 raise ValueError("Los vectores deben ser de la misma longitud")
-            paralela = self.__floordiv__(self, other)
+            paralela = self.__floordiv__(other)
             perpendicular = self - paralela
             return Vector(perpendicular)
 ```

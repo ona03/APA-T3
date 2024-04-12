@@ -115,6 +115,8 @@ Inserte a continuación el código de los métodos desarrollados en esta tarea, 
             paralela = [factor * elemento for elemento in other.vector]
             return Vector(paralela)
 
+    __rfloordiv__ = __floordiv__
+
     def __mod__(self, other):
         """
         Método para devolver la componente normal de un Vector
@@ -130,6 +132,8 @@ Inserte a continuación el código de los métodos desarrollados en esta tarea, 
             paralela = self.__floordiv__(other)
             perpendicular = self - paralela
             return Vector(perpendicular)
+
+    __rmod__ = __mod__
 ```
 
 #### Subida del resultado al repositorio GitHub y *pull-request*
